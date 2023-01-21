@@ -1,0 +1,102 @@
+* {
+  font-family: Sans-Serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #1dd1a1;
+  transition: 0.5s;
+}
+
+.login {
+  position: relative;
+  padding: 50px;
+  border-radius: 10%;
+  background: #fff;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  box-shadow: 0 25px 50px rgba(0.1);
+}
+
+.login h2 {
+  font-weight: 500;
+  border-left: 15px solid #1dd1a1;
+  line-height: 1em;
+  padding-left: 10px;
+  transition: 0.5s;
+  color: #333;
+}
+
+.login .inputbox {
+  position: relative;
+}
+
+.login .inputbox input {
+  position: relative;
+  width: 100%;
+  padding: 10px 15px;
+  outline: none;
+  border: 2px solid #555;
+  font-size: 1em;
+  color: #333;
+}
+
+.login .inputbox input#btn {
+  border: none;
+  background: #1dd1a1;
+  color: #fff;
+  font-size: 1.1em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.login .groub {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login .groub a {
+  color: #333;
+  text-decoration: none;
+}
+
+.login .groub a:nth-child(2) {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.colors {
+  position: absolute;
+  right: 0;
+  margin: 2.5rem;
+  padding: 10px;
+  border-radius: 10px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.colors span {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: var(--clr);
+  margin: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.colors span.active {
+  border: 2px solid #333;
+  scale: 1.5;
+}
